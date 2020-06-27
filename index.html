@@ -1,67 +1,109 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Jekyll v4.0.1">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <meta
+      name="author"
+      content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
+    />
+    <meta name="generator" content="Jekyll v4.0.1" />
     <title>PWA Body Mass Index</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/floating-labels/">
+    <link
+      rel="canonical"
+      href="https://hilmyansyahm-kelompok7-2.glitch.me/"
+    />
+
+   
+    
 
     <!-- Bootstrap core CSS -->
-<link href="bootstrap/bootstrap.css" rel="stylesheet">
-    
-<script type="text/javascript" src="programBMI.js"></script>
-    
+    <link href="bootstrap/bootstrap.css" rel="stylesheet" />
+
+    <script type="text/javascript" src="programBMI.js"></script>
+
     <!-- Custom styles for this template -->
-    <link href="floating-labels.css" rel="stylesheet">
+    <link href="floating-labels.css" rel="stylesheet" />
+
+    <link rel="manifest" href="manifest.json" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="BMI PWA" />
+    <link
+      rel="apple-touch-icon"
+      href="https://cdn.glitch.com/5156ef0c-68cf-44c7-b5f7-7cd58b55c63c%2Ficon-152x152.png?v=1593050954725"
+    />
+    <meta name="description" content="Aplikasi menghitung BMI" />
+
+    <!-- CODELAB: Add meta theme-color -->
+    <meta name="theme-color" content="#2F3BA2" />
+
+    <script src="script/install.js"></script>
   </head>
   <body>
     <form class="form-signin">
-  <div class="text-center mb-4">
-    <h1 class="h3 mb-3 font-weight-normal">PWA Body Mass Index</h1>
-    <p>Dikerjakan oleh Kelompok 7</p>
-    <p>CPD121 - Pemrosesan Data Tersebar</p>
-    <p>Dosen : Wawan Ridwan, ST, MT.</p>
-    <p>Universitas Esa Unggul</p>
-  </div>
+      <div class="text-center mb-4">
+        <h1 class="h3 mb-3 font-weight-normal">PWA Body Mass Index</h1>
+        <p>Dikerjakan oleh Kelompok 7</p>
+        <p>CPD121 - Pemrosesan Data Tersebar</p>
+        <p>Dosen : Wawan Ridwan, ST, MT.</p>
+        <p>Universitas Esa Unggul</p>
+      </div>
 
-  <p>
-    Masukkan Tinggi Badan (cm)
-      </p>
-  <div class="form-group">
-    <input type="text" class="form-control" id="ipt_t">
-  </div>
+      <div class="form-group">
+        <label
+          >Masukkan Tinggi Badan (cm)
+          <input type="text" class="form-control" id="ipt_t" />
+        </label>
+      </div>
 
-  <p>
-    Masukkan Berat Badan (kg)
-      </p>
-  <div class="form-group">
-    <input type="text" class="form-control" id="ipt_b">
-  </div>
+      <div class="form-group">
+        <label>
+          Masukkan Berat Badan (kg)
+          <input type="text" class="form-control" id="ipt_b" />
+        </label>
+      </div>
 
-  <button type="button" class="btn btn-lg btn-primary btn-block" onclick="hitung()">Hitung</button>
-<p>
-  
-      </p>
-<div>
- <table>
-   <tfoot>
-			<tr>
-				<td id="bmi">Hasil perhitungan BMI :</td>
-			</tr>
-			<tr>
-				<td>Keterangan :</td>
-			</tr>
-			<tr>
-				<td id="keterangan"></td>
-			</tr>			
-		</tfoot>
-	</table>
-</div>
+      <button
+        type="button"
+        class="btn btn-lg btn-primary btn-block"
+        onclick="hitung()"
+      >
+        Hitung
+      </button>
+      <p></p>
+      <div>
+        <table>
+          <tfoot>
+            <tr>
+              <td id="bmi">Hasil perhitungan BMI :</td>
+            </tr>
+            <tr>
+              <td>Keterangan :</td>
+            </tr>
+            <tr>
+              <td id="keterangan"></td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
       <p class="mt-5 mb-3 text-muted text-center">&copy; Kelompok 7</p>
     </form>
-</body>
+
+    <script>
+      // CODELAB: Register service worker.
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("service-worker.js").then(reg => {
+            console.log("Service worker registered.", reg);
+          });
+        });
+      }
+    </script>
+  </body>
 </html>
