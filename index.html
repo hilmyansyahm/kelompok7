@@ -2,31 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-
-    <meta
-      name="author"
-      content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="author" content="Kelompok 7" />
     <meta name="generator" content="Jekyll v4.0.1" />
     <title>PWA Body Mass Index</title>
 
-    <link
-      rel="canonical"
-      href="https://hilmyansyahm-kelompok7-2.glitch.me/"
-    />
-
-   
+    <link rel="canonical" href="https://hilmyansyahm-kelompok7-2.glitch.me/"/>
     
-
     <!-- Bootstrap core CSS -->
-    <link href="bootstrap/bootstrap.css" rel="stylesheet" />
-
-    <script type="text/javascript" src="programBMI.js"></script>
-
+    <link href="/bootstrap/bootstrap.css" rel="stylesheet"/>
+  
     <!-- Custom styles for this template -->
     <link href="floating-labels.css" rel="stylesheet" />
 
@@ -34,16 +19,12 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <meta name="apple-mobile-web-app-title" content="BMI PWA" />
-    <link
-      rel="apple-touch-icon"
-      href="https://cdn.glitch.com/5156ef0c-68cf-44c7-b5f7-7cd58b55c63c%2Ficon-152x152.png?v=1593050954725"
-    />
+    <link rel="apple-touch-icon" href="https://cdn.glitch.com/5156ef0c-68cf-44c7-b5f7-7cd58b55c63c%2Ficon-152x152.png?v=1593050954725"/>
     <meta name="description" content="Aplikasi menghitung BMI" />
 
     <!-- CODELAB: Add meta theme-color -->
     <meta name="theme-color" content="#2F3BA2" />
 
-    <script src="script/install.js"></script>
   </head>
   <body>
     <form class="form-signin">
@@ -56,8 +37,7 @@
       </div>
 
       <div class="form-group">
-        <label
-          >Masukkan Tinggi Badan (cm)
+        <label>Masukkan Tinggi Badan (cm)
           <input type="text" class="form-control" id="ipt_t" />
         </label>
       </div>
@@ -95,6 +75,9 @@
       <p class="mt-5 mb-3 text-muted text-center">&copy; Kelompok 7</p>
     </form>
 
+    <script type="text/javascript" src="programBMI.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="script/install.js"></script>
     <script>
       // CODELAB: Register service worker.
       if ("serviceWorker" in navigator) {
@@ -104,6 +87,6 @@
           });
         });
       }
-    </script>
+    </script>   
   </body>
 </html>

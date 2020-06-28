@@ -18,9 +18,21 @@
 "use strict";
 
 // CODELAB: Update cache names any time any of the cached files change.
-const CACHE_NAME = "static-cache-v1";
+const CACHE_NAME = 'static-cache-v2';
+const DATA_CACHE_NAME = 'data-cache-v1';
 
-const FILES_TO_CACHE = ["offline.html"];
+// CODELAB: Add list of files to cache here.
+const FILES_TO_CACHE = [
+  '/',
+  '/offline.html',
+  '/manifest.json',
+  '/floating-labels.css',
+  '/bootstrap/bootstrap.css',
+  '/bootstrap/bootstrap-grid.css',
+  '/bootstrap/bootstrap-reboot.css',
+  '/script/install.js',
+  '/programBMI.js',
+];
 
 
 self.addEventListener("install", evt => {

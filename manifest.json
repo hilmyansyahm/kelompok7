@@ -4,6 +4,13 @@
   "scripts": {
     "start": "server.js"
   },
+  
+  "name": "Program BMI",
+  "short_name": "programBMI",
+  "scripts": {
+    "start": "programBMI.js"
+  },
+  
   "icons": [{
     "src": "https://cdn.glitch.com/5156ef0c-68cf-44c7-b5f7-7cd58b55c63c%2Ficon-128x128.png?v=1593050960697",
       "sizes": "128x128",
