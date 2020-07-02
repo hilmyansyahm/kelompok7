@@ -16,12 +16,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License
  */
-'use strict';
+"use strict";
 
-const express = require('express');
-const fetch = require('node-fetch');
-const redirectToHTTPS = require('express-http-to-https').redirectToHTTPS;
-
+const express = require("express");
+const fetch = require("node-fetch");
+const redirectToHTTPS = require("express-http-to-https").redirectToHTTPS;
 
 /**
  * Starts the Express server.
@@ -33,16 +32,15 @@ function startServer() {
   var application_root = __dirname;
 
   // Redirect HTTP to HTTPS,
- app.use(redirectToHTTPS([/localhost:(\d{4})/], [], 301));
+  app.use(redirectToHTTPS([/localhost:(\d{4})/], [], 301));
 
-  
   //Handle requests for static files
   app.use(express.static(application_root));
 
   // Start the server
-  return app.listen('8000', () => {
+  return app.listen("8000", () => {
     // eslint-disable-next-line no-console
-    console.log('Local DevServer Started on port 8000...');
+    console.log("Local DevServer Started on port 8000...");
   });
 }
 

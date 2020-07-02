@@ -1,7 +1,4 @@
 var tinggi,berat,keterangan,bmi;
-
-
-
 function hitung() {
 	tinggi = parseFloat(document.getElementById("ipt_t").value);
 	tinggi /= 100;

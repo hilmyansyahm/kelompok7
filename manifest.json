@@ -4,41 +4,47 @@
   "scripts": {
     "start": "server.js"
   },
-  
+
   "name": "Program BMI",
   "short_name": "programBMI",
   "scripts": {
     "start": "programBMI.js"
   },
-  
-  "icons": [{
-    "src": "https://cdn.glitch.com/5156ef0c-68cf-44c7-b5f7-7cd58b55c63c%2Ficon-128x128.png?v=1593050960697",
+
+  "icons": [
+    {
+      "src": "gambar/output-onlinepngtools128.png",
       "sizes": "128x128",
       "type": "image/png"
-    }, {
-      "src": "https://cdn.glitch.com/5156ef0c-68cf-44c7-b5f7-7cd58b55c63c%2Ficon-144x144.png?v=1593050956516",
+    },
+    {
+      "src": "gambar/output-onlinepngtools144.png",
       "sizes": "144x144",
       "type": "image/png"
-    }, {
-      "src": "https://cdn.glitch.com/5156ef0c-68cf-44c7-b5f7-7cd58b55c63c%2Ficon-152x152.png?v=1593050954725",
+    },
+    {
+      "src": "gambar/output-onlinepngtools152.png",
       "sizes": "152x152",
       "type": "image/png"
-    }, {
-      "src": "https://cdn.glitch.com/5156ef0c-68cf-44c7-b5f7-7cd58b55c63c%2Ficon-192x192.png?v=1593050945288",
+    },
+    {
+      "src": "gambar/output-onlinepngtools192.png",
       "sizes": "192x192",
       "type": "image/png"
-    }, {
-      "src": "https://cdn.glitch.com/5156ef0c-68cf-44c7-b5f7-7cd58b55c63c%2Ficon-256x256.png?v=1593050941809",
+    },
+    {
+      "src": "gambar/output-onlinepngtools256.png",
       "sizes": "256x256",
       "type": "image/png"
-    }, {
-      "src": "https://cdn.glitch.com/5156ef0c-68cf-44c7-b5f7-7cd58b55c63c%2Ficon-512x512.png?v=1593051024497",
+    },
+    {
+      "src": "gambar/output-onlinepngtools512.png",
       "sizes": "512x512",
       "type": "image/png"
-    }],
+    }
+  ],
   "start_url": "index.html",
   "display": "standalone",
   "background_color": "#3E4EB8",
   "theme_color": "#2F3BA2"
-  
 }
